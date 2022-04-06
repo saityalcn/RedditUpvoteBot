@@ -6,7 +6,7 @@ import pandas as pd
 
 def upVote():
 
-    linkOfThePost = input("Gonderinin Linki: ")
+    linkOfThePost = input("Enter URL of the post: ")
 
     caps = webdriver.DesiredCapabilities.CHROME.copy()
     caps['acceptInsecureCerts'] = True
