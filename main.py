@@ -16,14 +16,10 @@ def upVote():
     df = pd.read_csv("accounts.csv")
     userNamesOfAccounts = df.loc[:]["username"];
     passwordsOfAccounts = df.loc[:]["password"];
-    
-    print(df)
-    print(userNamesOfAccounts)
+
     i = 0
 
     while(i<len(df)):
-        print(type(userNamesOfAccounts)) 
-
         browser.get("https://www.reddit.com/")
         time.sleep(3)
 
